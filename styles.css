@@ -18,7 +18,7 @@ body {
 
 .center {
   /* Ensure .center takes up the full viewport */
-  height: 80%;
+  height: 70%;
 
   display: flex;
   justify-content: center;
@@ -28,7 +28,7 @@ body {
 .card {
   /* Set percentage-based dimensions relative to its parent .center */
   height: 100%;
-  width: 100%;
+  width: 130%;
   display: flex;
   align-items: center;
   justify-content: center;
