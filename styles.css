@@ -19,7 +19,7 @@ body {
 .center {
   /* Ensure .center takes up the full viewport */
   height: 70%;
-  width: 70%;
+
   display: flex;
   justify-content: center;
   align-items: center;
