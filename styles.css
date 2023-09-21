@@ -1,32 +1,47 @@
-@font-face {
-  font-family: 'coolvetica';
-  src: url(coolvetica.otf); 
-}
-
 body {
   color: white;
   font-size: xx-large;
   font-family: 'coolvetica';
+  height: 100%;
+  width: 100%;
+  margin: 0; /* Reset margin to avoid unexpected spacing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .scene {
   display: inline-block;
   perspective: 1000px;
+  /* You can set a fixed size for the scene if needed */
+  width: 200px;
+  height: 200px;
+}
+
+.center {
+  /* Ensure .center takes up the full viewport */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
-  height: 80vh;
-  width: 80vh;
+  /* Set percentage-based dimensions relative to its parent .center */
+  height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   transform-style: preserve-3d;
   transform-origin: center;
   transition: transform 0.5s;
+  position: relative; /* Ensure .card takes the size of its content */
 }
 
 .card.is-flipped {
-  transform: rotateX(180deg); /* Flip the card along the X-axis */
+  transform: rotateX(180deg);
 }
 
 .card__face {
@@ -43,15 +58,11 @@ body {
 }
 
 .card__face--front {
-  background: crimson; /* Set the background color for the front face */
-  transform: rotateX(0deg); /* No rotation on the front face */
+  background: crimson;
+  transform: rotateX(0deg);
 }
 
 .card__face--back {
-  background: slateblue; /* Set the background color for the back face */
-  transform: rotateX(180deg); /* Rotate the back face along the X-axis */
-}
-
-.center{
-  margin-left: 22%;
+  background: slateblue;
+  transform: rotateX(180deg);
 }
