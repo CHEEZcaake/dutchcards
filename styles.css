@@ -52,6 +52,6 @@ body {
   transform: rotateX(180deg); /* Rotate the back face along the X-axis */
 }
 
-.center {
-  margin-left: 35vh;
+.center{
+  margin-left: 22%;
 }
