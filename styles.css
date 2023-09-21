@@ -1,17 +1,15 @@
+
 body {
   color: white;
   font-size: xx-large;
   font-family: 'coolvetica';
   height: 100%;
   width: 100%;
-  margin: 0; /* Reset margin to avoid unexpected spacing */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 
 .scene {
-  display: inline-block;
+
   perspective: 1000px;
   /* You can set a fixed size for the scene if needed */
   width: 200px;
@@ -20,8 +18,8 @@ body {
 
 .center {
   /* Ensure .center takes up the full viewport */
-  height: 100%;
-  width: 100%;
+  height: 70%;
+  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
