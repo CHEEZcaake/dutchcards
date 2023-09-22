@@ -6,8 +6,30 @@ body {
   font-family: 'coolvetica';
   height: 100%;
   width: 100%;
+text-decoration: none;
 
 }
+
+a{
+  text-decoration: none;
+color: black;
+}
+
+/* Define the buttons class and the hover effect */
+.buttons {
+  display: inline-block;
+  border-radius: 100px;
+  background-color: white;
+  padding-left: 8%;
+  padding-right: 8%;
+  transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+.buttons:hover {
+  background-color: black; /* Change the background color on hover */
+  color: white;
+}
+
 
 .scene {
 
@@ -19,8 +41,7 @@ body {
 
 .center {
 
-
-  transform: translate(-4%, 0);
+margin-left: -8%;
   /* Ensure .center takes up the full viewport */
   height: 70%;
   display: flex;
