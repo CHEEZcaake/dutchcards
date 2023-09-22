@@ -20,7 +20,7 @@ body {
 .center {
 
 
-  transform: translate(-3%, 0);
+  transform: translate(-4%, 0);
   /* Ensure .center takes up the full viewport */
   height: 70%;
   display: flex;
