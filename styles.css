@@ -1,6 +1,7 @@
 
 body {
   color: black;
+  background-color: black;
   font-size: xx-large;
   font-family: 'coolvetica';
   height: 100%;
@@ -19,23 +20,20 @@ body {
 .center {
   /* Ensure .center takes up the full viewport */
   height: 70%;
-
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .card {
   /* Set percentage-based dimensions relative to its parent .center */
   height: 100%;
   width: 130%;
-  display: flex;
+
   align-items: center;
   justify-content: center;
   transform-style: preserve-3d;
-  transform-origin: center;
+
   transition: transform 0.5s;
-  position: relative; /* Ensure .card takes the size of its content */
 }
 
 .card.is-flipped {
