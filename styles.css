@@ -1,7 +1,7 @@
 
 body {
   color: black;
-  background-color: black;
+  background-color: #222831;
   font-size: xx-large;
   font-family: 'coolvetica';
   height: 100%;
@@ -29,6 +29,18 @@ color: black;
   background-color: black; /* Change the background color on hover */
   color: white;
 }
+/* Define styles for words and meanings */
+.word {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.meaning {
+  display: none; /* Initially hide meanings */
+  font-size: 18px;
+}
+
 
 
 .scene {
@@ -70,7 +82,7 @@ margin-left: -8%;
   width: 100%;
   height: 100%;
   line-height: 200px;
-  color: white;
+  color: #222831;
   text-align: center;
   font-weight: bold;
   font-size: 40px;
@@ -78,11 +90,11 @@ margin-left: -8%;
 }
 
 .card__face--front {
-  background: crimson;
+  background: #EEEEEE;
   transform: rotateX(0deg);
 }
 
 .card__face--back {
-  background: slateblue;
+  background: #FF9494;
   transform: rotateX(180deg);
 }
